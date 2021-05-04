@@ -17,7 +17,8 @@
             $validAge = is_numeric ($age);
 
             //verifico che l'email contenga il punto e la chiocciola
-            if (!strpos ( $mail , '.')===false && !strpos ( $mail , '@')===false) {
+            if (is_numeric(strpos ( $mail , '.')) && is_numeric(strpos ( $mail , '@')) ){
+
                 $validMail = true;
             }
 
