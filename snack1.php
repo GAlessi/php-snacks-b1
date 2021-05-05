@@ -9,28 +9,44 @@
         <?php
             $matches =[
                 [
-                    'homeTeam' => 'Squadra viola',
-                    'outTeam' => 'Squadra gialla',
-                    'homeScore' => 50,
-                    'outScore' => 45
+                    'homeTeam' => [
+                        'name' => 'Squadra viola',
+                        'score' => 50
+                    ],
+                    'outTeam' => [
+                        'name' => 'Squadra gialla',
+                        'score' => 45
+                    ]
                 ],
                 [
-                    'homeTeam' => 'Squadra verde',
-                    'outTeam' => 'Squadra rosa',
-                    'homeScore' => 33,
-                    'outScore' => 38
+                    'homeTeam' => [
+                        'name' => 'Squadra verde',
+                        'score' => 33
+                    ],
+                    'outTeam' => [
+                        'name' => 'Squadra rosa',
+                        'score' => 38
+                    ]
                 ],
                 [
-                    'homeTeam' => 'Squadra blu',
-                    'outTeam' => 'Squadra arancione',
-                    'homeScore' => 12,
-                    'outScore' => 13
+                    'homeTeam' => [
+                        'name' => 'Squadra arancione',
+                        'score' => 15
+                    ],
+                    'outTeam' => [
+                        'name' => 'Squadra blu',
+                        'score' => 28
+                    ]
                 ],
                 [
-                    'homeTeam' => 'Squadra rossa',
-                    'outTeam' => 'Squadra nera',
-                    'homeScore' => 99,
-                    'outScore' => 0
+                    'homeTeam' => [
+                        'name' => 'Squadra rossa',
+                        'score' => 99
+                    ],
+                    'outTeam' => [
+                        'name' => 'Squadra nera',
+                        'score' => 0
+                    ]
                 ]
             ];
 
@@ -38,13 +54,13 @@
                 $match = $matches[$x];
 
                 echo '<h1>'
-                    . $match['homeTeam']
+                    . $match['homeTeam']['name']
                     . ' - '
-                    . $match['outTeam']
+                    . $match['outTeam']['name']
                     . ' | '
-                    . $match['homeScore']
+                    . $match['homeTeam']['score']
                     . ' - '
-                    . $match['outScore']
+                    . $match['outTeam']['score']
                 . '</h1>';
             }
          ?>

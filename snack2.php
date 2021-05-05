@@ -20,7 +20,6 @@
             // if (is_numeric(strpos ( $mail , '.')) && is_numeric(strpos ( $mail , '@')) ){ //prima versione che permette il punto a i=0
             if (strpos( $mail , '.')!== false && strpos( $mail , '@')!== false) { //seconda versione che permette il punto a i=0
 
-
                 $validMail = true;
             }
 
